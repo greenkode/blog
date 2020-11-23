@@ -1,1 +1,1 @@
-Sitemap: https://greenkode.io/blog/sitemap.xml
+Sitemap: http://greenkode.io/sitemap.xml
