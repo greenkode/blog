@@ -7,7 +7,7 @@
 # https://learnxinyminutes.com/docs/yaml/
 
 title: greenkode
-description: for the love of greens & code
+description: This site is built with fastpages. An easy to use blogging platform with support for Jupyter Notebooks.
 github_username: greenkode
 # you can comment the below line out if your repo name is not different than your baseurl
 github_repo: "blog"
