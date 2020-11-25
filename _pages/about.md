@@ -8,15 +8,16 @@ permalink: /about/
 [![LinkedIn](/images/Linkedin-Logo.png)](https://www.linkedin.com/in/umoh-bassey-duke-2951b71b/)
 
 Lived in 3 corners of Africa.\
-![Nigeria]() 
-![South Africa]()
-![Ethiopia]()
-![]({{ site.baseurl }}/images/iconfinder_Flag_of_Nigeria_96249.png "Nigeria")
-![]({{ site.baseurl }}/images/iconfinder_Flag_of_South_Africa_96272.png "South Africa")
-![]({{ site.baseurl }}/images/iconfinder_Flag_of_Ethiopia_96255.png "Ethiopia")
+<p float="left">
+    <img alt="Nigeria" src="{{ site.baseurl }}/images/iconfinder_Flag_of_Nigeria_96249.png" width="50" />
+    <img alt="South Africa" src="{{ site.baseurl }}/images/iconfinder_Flag_of_South_Africa_96272.png" width="50" />
+    <img alt="Ethiopia" src="{{ site.baseurl }}/images/iconfinder_Flag_of_Ethiopia_96255.png" width="50" />
+</p>
 
 #### Current Residence
-![Netherlands](/images/iconfinder_Flag_of_Netherlands_96202.png)
+<p float="left">
+    <img alt="Netherlands" src="{{ site.baseurl }}/images/iconfinder_Flag_of_Netherlands_96202.png" width="50" />
+</p>
 
 #### Hobbies
 Hiking, Outdoors, Nature, Reading
