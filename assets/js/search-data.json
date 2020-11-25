@@ -38,13 +38,35 @@
   
 
   
+      ,"page2": {
+          "title": "FP",
+          "content": "Much ado about Functional Programming. .",
+          "url": "https://greenkode.io/fp/",
+          "relUrl": "/fp/",
+          "date": ""
+      }
+      
+  
 
   
-      ,"page3": {
-          "title": "JVM",
-          "content": "All things JVM. Java, Kotlin, Clojure :), Groovy, and yes. Scala. .",
-          "url": "https://greenkode.io/jvm/",
-          "relUrl": "/jvm/",
+
+  
+      ,"page4": {
+          "title": "ML",
+          "content": "Machine Learning. .",
+          "url": "https://greenkode.io/ml/",
+          "relUrl": "/ml/",
+          "date": ""
+      }
+      
+  
+
+  
+      ,"page5": {
+          "title": "OOP",
+          "content": "OOP is my bread and butter. .",
+          "url": "https://greenkode.io/oop/",
+          "relUrl": "/oop/",
           "date": ""
       }
       
@@ -70,7 +92,7 @@
   
 
   
-      ,"page11": {
+      ,"page13": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://greenkode.io/robots.txt",

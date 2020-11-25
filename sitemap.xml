@@ -12,10 +12,16 @@
 <loc>https://greenkode.io/about/</loc>
 </url>
 <url>
+<loc>https://greenkode.io/fp/</loc>
+</url>
+<url>
 <loc>https://greenkode.io/</loc>
 </url>
 <url>
-<loc>https://greenkode.io/jvm/</loc>
+<loc>https://greenkode.io/ml/</loc>
+</url>
+<url>
+<loc>https://greenkode.io/oop/</loc>
 </url>
 <url>
 <loc>https://greenkode.io/search/</loc>
