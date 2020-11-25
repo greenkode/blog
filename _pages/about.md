@@ -11,7 +11,9 @@ Lives in Amsterdam\
 Works for ![Sytac](https://sytac.io)
 
 ![Nigeria](/images/iconfinder_Flag_of_Nigeria_96249.png)
+---
 ![South Africa](/images/iconfinder_Flag_of_South_Africa_96272.png)
+---
 ![Ethiopia](/images/iconfinder_Flag_of_Ethiopia_96255.png)
 
 ### Current Residence
