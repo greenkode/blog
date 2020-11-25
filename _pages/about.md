@@ -8,7 +8,8 @@ permalink: /about/
 ## Bio
 [![LinkedIn](/images/Linkedin-Logo.png)](https://www.linkedin.com/in/umoh-bassey-duke-2951b71b/)
 Pragmatic Programmer.
-Lived in 3 corners of Africa.\
+<br/>
+Lived in 3 corners of Africa.
 <p float="left">
     <img align="left" alt="Nigeria" src="{{ site.baseurl }}/images/iconfinder_Flag_of_Nigeria_96249.png" width="50" />
     <img align="left" alt="South Africa" src="{{ site.baseurl }}/images/iconfinder_Flag_of_South_Africa_96272.png" width="50" />
