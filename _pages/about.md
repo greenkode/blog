@@ -5,7 +5,7 @@ permalink: /about/
 ---
 ![Namibia, one of my more memorable holidays.](/images/IMG_E7861-min.JPG)
 
-### Bio
+## Bio
 [![LinkedIn](/images/Linkedin-Logo.png)](https://www.linkedin.com/in/umoh-bassey-duke-2951b71b/)
 Pragmatic Programmer.
 Lived in 3 corners of Africa.\
@@ -16,15 +16,16 @@ Lived in 3 corners of Africa.\
 </p>
 <br/>
 
-### Current Residence
+## Current Residence
 <p float="left">
-    <img alt="Netherlands" src="{{ site.baseurl }}/images/iconfinder_Flag_of_Netherlands_96202.png" width="50" />
+    <img align="left" alt="Netherlands" src="{{ site.baseurl }}/images/iconfinder_Flag_of_Netherlands_96202.png" width="50" />
 </p>
 
-### Hobbies
+## Hobbies
 Hiking, Outdoors, Nature, Reading
 
-### Sports ;)
+<br/><br/>
+
 ![]({{ site.baseurl }}/images/super_eagles.jpg "Super Eagles")
 ![]({{ site.baseurl }}/images/Springboks-logo.jpg "Springboks")
 ![]({{ site.baseurl }}/images/1200px-Arsenal_FC.svg.png "Arsenal")
