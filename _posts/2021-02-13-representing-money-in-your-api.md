@@ -1,5 +1,6 @@
 ---
 toc: true
+comments: true
 layout: post
 description: Representing Money in your API response.
 categories: [markdown]
@@ -11,7 +12,7 @@ title: Representing Money in your API response
  > arise if not given enough thought.
 
 ## The Problem.
-I was trawling through one of my favourite crypto channels when I
+I was trawling through one of my favourite crypto discord channels when I
 came across an interesting conversation.
 
 ![]({{site.baseurl }}/images/money/money_api_convo.png "API discord conversation")
@@ -107,15 +108,16 @@ wasn't a client consideration, but something to do with the API backend implemen
 
 The most obvious question I had was, Why not just do the division yourself while returning
 the value???
-Should the client care if you return `"4 : 23.0"` than returning `"4 : 230"` with the added
- caveat that the clients should divide by 10. And what the hell is Gwei?
+
+Should the client care if you return `"4 : 23.0"` or `"4 : 230"` with the added
+ caveat that the clients should divide by 10. Also what the hell is Gwei?
 
 ## About units
 So it turns out a Gwei is the smallest unit of ETH (essentially the ETH equivalent of a satoshi)
-Due to the nature of cryptocurrencies, you an send over really tiny amounts of money,
+Due to the nature of cryptocurrencies, you an send really tiny amounts of money over the wire,
 and while the examples above assume standard whole numbers, it doesn't deal with fractions.
 
-So how do we represent the currency values in a way that is future proof and still allows us
+So how do we represent the currency values in a way that still allows us
 a bit of flexibility to modify the api implementation, if things change in the future.
 
 Here's an attempt.
@@ -128,12 +130,12 @@ Here's an attempt.
 }
 ```
 
-So Here I've added a field `multiplicationFactor`. All it really does is provide a value
+So Here I've added a field `multiplicationFactor` (I couldn't be arsed to think of a better name TBH). All it really does is provide a value
 which you can multiply by to produce base units, if needed. I've also provided the
 unit field as well for information purposes. The idea being that the final value displayed
 in base units is the `multiplicationFactor * accountBalance`
 
-So how can we represent 230.34 using this format?
+So how can we represent `230.34` using this format?
 
 ```json
 {
@@ -163,3 +165,6 @@ depends on the two fields described above.
 The question of which units to use is one of those that draws a *meh* response. The case being that there isn't really a right, 
 or wrong way to do it. Looking at this [question](https://stackoverflow.com/questions/29341337/how-to-define-money-amounts-in-an-api) 
 on StackOverflow yields insight into how different systems implement it.
+
+Of course, there are advantages and disadvantages to this approach. I'd like to know what you think
+Leave feedback here if you
