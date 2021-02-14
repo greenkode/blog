@@ -1,4 +1,10 @@
-
+---
+toc: true
+layout: post
+description: Representing Money in your API response.
+categories: [markdown]
+title: Representing Money in your API response
+---
 # Representing Money in your API response
 > Representing monetary values in an API might seem straightforward at first,
 > however on second thought, there are some subtle complications that can
