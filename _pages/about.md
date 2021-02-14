@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About Me
+hide: true
 permalink: /about/
 ---
 ![Namibia, one of my more memorable holidays.](/images/IMG_E7861-min.JPG)
