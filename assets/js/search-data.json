@@ -49,31 +49,9 @@
   
 
   
-      ,"page2": {
-          "title": "FP",
-          "content": "Much ado about Functional Programming. .",
-          "url": "https://greenkode.io/fp/",
-          "relUrl": "/fp/",
-          "date": ""
-      }
-      
-  
 
   
-
-  
-      ,"page4": {
-          "title": "ML",
-          "content": "Machine Learning. .",
-          "url": "https://greenkode.io/ml/",
-          "relUrl": "/ml/",
-          "date": ""
-      }
-      
-  
-
-  
-      ,"page5": {
+      ,"page3": {
           "title": "OOP",
           "content": "OOP is my bread and butter. .",
           "url": "https://greenkode.io/oop/",
@@ -103,7 +81,7 @@
   
 
   
-      ,"page13": {
+      ,"page11": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://greenkode.io/robots.txt",
