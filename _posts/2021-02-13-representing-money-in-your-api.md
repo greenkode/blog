@@ -166,5 +166,5 @@ The question of which units to use is one of those that draws a *meh* response. 
 or wrong way to do it. Looking at this [question](https://stackoverflow.com/questions/29341337/how-to-define-money-amounts-in-an-api) 
 on StackOverflow yields insight into how different systems implement it.
 
-Of course, there are advantages and disadvantages to this approach. I'd like to know what you think
-Leave feedback here if you
+Of course, there are advantages and disadvantages to this approach. Feel free
+to leave your feedback below.
