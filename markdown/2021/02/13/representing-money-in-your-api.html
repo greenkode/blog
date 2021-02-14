@@ -10,13 +10,13 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Representing Money in your API response." />
 <meta property="og:description" content="Representing Money in your API response." />
-<link rel="canonical" href="https://greenkode.io/markdown/2020/02/13/representing-money-in-your-api.html" />
-<meta property="og:url" content="https://greenkode.io/markdown/2020/02/13/representing-money-in-your-api.html" />
+<link rel="canonical" href="https://greenkode.io/markdown/2021/02/13/representing-money-in-your-api.html" />
+<meta property="og:url" content="https://greenkode.io/markdown/2021/02/13/representing-money-in-your-api.html" />
 <meta property="og:site_name" content="greenkode" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-02-13T00:00:00-06:00" />
+<meta property="article:published_time" content="2021-02-13T00:00:00-06:00" />
 <script type="application/ld+json">
-{"url":"https://greenkode.io/markdown/2020/02/13/representing-money-in-your-api.html","@type":"BlogPosting","headline":"Representing Money in your API response","dateModified":"2020-02-13T00:00:00-06:00","datePublished":"2020-02-13T00:00:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://greenkode.io/markdown/2020/02/13/representing-money-in-your-api.html"},"description":"Representing Money in your API response.","@context":"https://schema.org"}</script>
+{"url":"https://greenkode.io/markdown/2021/02/13/representing-money-in-your-api.html","@type":"BlogPosting","headline":"Representing Money in your API response","dateModified":"2021-02-13T00:00:00-06:00","datePublished":"2021-02-13T00:00:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://greenkode.io/markdown/2021/02/13/representing-money-in-your-api.html"},"description":"Representing Money in your API response.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://greenkode.io/feed.xml" title="greenkode" /><link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -71,8 +71,8 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Representing Money in your API response</h1><p class="page-description">Representing Money in your API response.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-02-13T00:00:00-06:00" itemprop="datePublished">
-        Feb 13, 2020
+    <h1 class="post-title p-name" itemprop="name headline">Representing Money in your API response</h1><p class="page-description">Representing Money in your API response.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-02-13T00:00:00-06:00" itemprop="datePublished">
+        Feb 13, 2021
       </time>
        • <span class="read-time" title="Estimated read time">
     
@@ -114,7 +114,7 @@ arise if not given enough thought.</p>
 
 <h2 id="the-problem">
 <a class="anchor" href="#the-problem" aria-hidden="true"><span class="octicon octicon-link"></span></a>The Problem.</h2>
-<p>I was trawling through one of my favourite crypto channels when I
+<p>I was trawling through one of my favourite crypto discord channels when I
 came across an interesting conversation.</p>
 
 <p><img src="/images/money/money_api_convo.png" alt="" title="API discord conversation"></p>
@@ -212,17 +212,18 @@ dealing with some very small numerical values.</p>
 wasn’t a client consideration, but something to do with the API backend implementation.</p>
 
 <p>The most obvious question I had was, Why not just do the division yourself while returning
-the value???
-Should the client care if you return <code class="language-plaintext highlighter-rouge">"4 : 23.0"</code> than returning <code class="language-plaintext highlighter-rouge">"4 : 230"</code> with the added
- caveat that the clients should divide by 10. And what the hell is Gwei?</p>
+the value???</p>
+
+<p>Should the client care if you return <code class="language-plaintext highlighter-rouge">"4 : 23.0"</code> or <code class="language-plaintext highlighter-rouge">"4 : 230"</code> with the added
+ caveat that the clients should divide by 10. Also what the hell is Gwei?</p>
 
 <h2 id="about-units">
 <a class="anchor" href="#about-units" aria-hidden="true"><span class="octicon octicon-link"></span></a>About units</h2>
 <p>So it turns out a Gwei is the smallest unit of ETH (essentially the ETH equivalent of a satoshi)
-Due to the nature of cryptocurrencies, you an send over really tiny amounts of money,
+Due to the nature of cryptocurrencies, you an send really tiny amounts of money over the wire,
 and while the examples above assume standard whole numbers, it doesn’t deal with fractions.</p>
 
-<p>So how do we represent the currency values in a way that is future proof and still allows us
+<p>So how do we represent the currency values in a way that still allows us
 a bit of flexibility to modify the api implementation, if things change in the future.</p>
 
 <p>Here’s an attempt.</p>
@@ -234,12 +235,12 @@ a bit of flexibility to modify the api implementation, if things change in the f
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div></div>
 
-<p>So Here I’ve added a field <code class="language-plaintext highlighter-rouge">multiplicationFactor</code>. All it really does is provide a value
+<p>So Here I’ve added a field <code class="language-plaintext highlighter-rouge">multiplicationFactor</code> (I couldn’t be arsed to think of a better name TBH). All it really does is provide a value
 which you can multiply by to produce base units, if needed. I’ve also provided the
 unit field as well for information purposes. The idea being that the final value displayed
 in base units is the <code class="language-plaintext highlighter-rouge">multiplicationFactor * accountBalance</code></p>
 
-<p>So how can we represent 230.34 using this format?</p>
+<p>So how can we represent <code class="language-plaintext highlighter-rouge">230.34</code> using this format?</p>
 
 <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
     </span><span class="nl">"accountBalance"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"230.34"</span><span class="p">,</span><span class="w">
@@ -268,7 +269,18 @@ depends on the two fields described above.</p>
 or wrong way to do it. Looking at this <a href="https://stackoverflow.com/questions/29341337/how-to-define-money-amounts-in-an-api">question</a> 
 on StackOverflow yields insight into how different systems implement it.</p>
 
-  </div><a class="u-url" href="/markdown/2020/02/13/representing-money-in-your-api.html" hidden></a>
+<p>Of course, there are advantages and disadvantages to this approach. I’d like to know what you think
+Leave feedback here if you</p>
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="greenkode/blog"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/markdown/2021/02/13/representing-money-in-your-api.html" hidden></a>
 </article>
       </div>
     </main><footer class="site-footer h-card">
