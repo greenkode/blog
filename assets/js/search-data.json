@@ -49,16 +49,16 @@
   
 
   
-
-  
-      ,"page3": {
-          "title": "OOP",
-          "content": "OOP is my bread and butter. .",
-          "url": "https://greenkode.com/oop/",
-          "relUrl": "/oop/",
+      ,"page2": {
+          "title": "DDD",
+          "content": "",
+          "url": "https://greenkode.com/ddd/",
+          "relUrl": "/ddd/",
           "date": ""
       }
       
+  
+
   
 
   
